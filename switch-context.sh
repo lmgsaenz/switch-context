@@ -12,7 +12,7 @@ current_context=$(kubectl config view -o template --template='{{ index . "curren
 all_contexts=$(kubectl config get-contexts --output name | xargs)
 
 echo "your current context is: $blue $current_context $reset"
-read -p "¿Do you want to change the context ? [Y/n]: " answer
+read -p "¿Do you want to change the context SuperHero ? [Y/n]: " answer
 
 if [ $answer = Y ] | [ $answer = y ]
 then
